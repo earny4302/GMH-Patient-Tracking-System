@@ -1,8 +1,9 @@
 body {
     background-color: #1c64c3;
-    
+    padding: 1%;
 }
 #logo_home{
     height: 300px;
     width: 25%;
+    allign itemsizing content: center;
 }
