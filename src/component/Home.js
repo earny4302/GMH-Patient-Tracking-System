@@ -7,7 +7,7 @@ const Home = () => {
         <>
             <div id="main">
                 <div>
-                    <img src="https://i.ibb.co/0QpPnbt/logo1.jpg" id="logo_home"></img>
+                    <img src="https://i.ibb.co/Kyw5xgL/logo-no-background.png" id="logo_home"></img>
                 </div>
                 <div id="Heading">GWALIOR MEDICAL HOSPITAL</div>
                 
