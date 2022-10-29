@@ -6,7 +6,7 @@ const Footer = () => {
         <>
             <hr/>
             <center>
-                <h3>&copy; Labh K</h3>
+                <h3>&copy; PL Developers</h3>
             </center>
         </>
         
