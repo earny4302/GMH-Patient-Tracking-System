@@ -1,52 +1,83 @@
-import React from 'react';
-import Header from '../Header';
-import Footer from '../Footer'
+import React,{Component} from 'react';
+// import Header from '../Header';
+// import Footer from '../Footer'
 import './home.css'
-const Home = () => {
-    return(
-        <>
-            <div id="main">
-                <center>
-                    <div id="border">
+
+const url = "http://localhost:5000/api/auth/login";
+
+class Home extends Component{
+
+    constructor(props){
+        super(props)
+
+        this.state={
+            email:'',
+            password:'',
+            message:''
+        }
+    }
+
+    handleChange = (event) => {
+        this.setState({[event.target.name]:event.target.value})
+    }
+
+    handleSubmit = () => {
+        fetch(url,{
+            method: 'POST',
+            headers:{
+                'accept':'application/json',
+                'Content-Type':'application/json'
+            },
+            body:JSON.stringify(this.state)
+        })
+        .then((res) => res.json())
+        .then((data) => {
+            if(data.auth === false){
+                this.setState({message:data.token})
+            }else{
+                sessionStorage.setItem('ltk',data.token)
+                this.props.history.push(`/`)
+            }
+        })
+    }
 
 
-                    <div>
-                        <img src="https://i.ibb.co/Kyw5xgL/logo-no-background.png" id="logo_home"></img>
-                    </div>
-
-                    <div id="HeadingGMH">GWALIOR MEDICAL HOSPITAL</div>
-                    
-                    <div>
-                        <form action="http://localhost:5000/api/auth/login" id="login">
-
-                            <div class="mb-3 mt-3">
-                                <label for="email" class="form-label">Email:</label>
-                                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email"/>
-                            </div>
-
-                            <div class="mb-3">
-                                <label for="pwd" class="form-label">Password:</label>
-                                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd"/>
-                            </div>
-
-                            <div class="form-check mb-3">
-                                <label class="form-check-label">
-                                <input class="form-check-input" type="checkbox" name="remember"/> Remember me
-                                </label>
-                            </div>
-
-                            <button type="submit" class="btn btn-primary">Submit</button>
-                        </form>
-                    </div>
-
-                    
+    render(){
+        return(
+            <>
+                <div id="main">
+                    <center>
+                        <div>
+                            <img src="https://i.ibb.co/Kyw5xgL/logo-no-background.png" id="logo_home"></img>
                         </div>
+    
+                        <div id="HeadingGMH">GWALIOR MEDICAL HOSPITAL</div>
+                        
+                        <div id="login">
+                            <form  id="login">
+                            
+                            <h4 style={{color:'#690101'}}>{this.state.message}</h4>
+                            <div class="input-group" id="block">
+                                <span class="input-group-text"><i class="fas fa-user-alt"></i></span>
+                                <input type="email" class="form-control" placeholder="Email" id="email" name="email" value={this.state.email} onChange={this.handleChange} required/>
+                            </div>
+                            
 
-                
-                </center>                
-            </div>
-        </>
-    )
+                            <div class="input-group" id="block">
+                                <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                                <input type="password" class="form-control" placeholder="Password" id="password" name="password" value={this.state.password} onChange={this.handleChange} required/>
+                            </div>
+    
+                            <button type="submit" class="btn btn-primary">Sign In</button>
+                            </form>
+                        </div>    
+                    </center>                
+                </div>
+            </>
+        )
+
+    }
+    
 }
 
 export default Home
