@@ -36,7 +36,7 @@ class Home extends Component{
                 this.setState({message:data.token})
             }else{
                 sessionStorage.setItem('ltk',data.token)
-                this.props.history.push(`/`)
+                this.props.history.push(`/recep`)
             }
         })
     }
