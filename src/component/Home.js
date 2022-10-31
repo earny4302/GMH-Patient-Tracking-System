@@ -3,7 +3,7 @@ import React,{Component} from 'react';
 // import Footer from '../Footer'
 import './home.css'
 
-const url = "https://lens-jwt.herokuapp.com/api/auth/login";
+const url = "http://localhost:5000/api/auth/login";
 
 class Home extends Component{
 
@@ -54,7 +54,7 @@ class Home extends Component{
                         <div id="HeadingGMH">GWALIOR MEDICAL HOSPITAL</div>
                         
                         <div id="login">
-                            <form  id="login">
+                            
                             
                             <h4 style={{color:'#690101'}}>{this.state.message}</h4>
                             <div class="input-group" id="block">
@@ -69,7 +69,7 @@ class Home extends Component{
                             </div>
     
                             <button type="submit" class="btn btn-primary" onClick={this.handleSubmit}>Sign In</button>
-                            </form>
+                            
                         </div>    
                     </center>                
                 </div>

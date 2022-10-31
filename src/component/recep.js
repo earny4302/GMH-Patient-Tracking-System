@@ -1,14 +1,49 @@
 import React,{Component} from 'react';
+import {Link} from 'react-router-dom';
 import "./recep.css";
+
+const url = "http://localhost:5000/api/auth/userInfo";
 class Recep extends Component {
-    constructor(props)
-    {
+    
+    constructor(props){
         super(props)
 
         this.state={
-            email:'',
-            password:'',
-            message:''
+            userData:'',
+            username:'',
+            userImg:''
+        }
+    }
+
+    handleLogout = () => {
+        sessionStorage.removeItem('ltk')
+        sessionStorage.removeItem('userInfo')
+        sessionStorage.setItem('loginStatus','LoggedOut')
+        this.setState({userData:''})
+        this.props.history.push('/')
+    }
+
+    details = () => {
+        if(this.state.userData.name){
+            let data = this.state.userData;
+            let outputArray = [data.name, data.email, data.phone, data.role];
+            sessionStorage.setItem('userInfo',outputArray);
+            sessionStorage.setItem('loginStatus','LoggedIn')
+            return(
+                <> 
+                    <span>&#128075; Hi {data.name}</span>
+                    <span>{data.role}</span>
+                </>
+            )
+
+        }else{
+            return(
+                <>  
+                    <span >Name Here</span>
+                    <span>Design Here</span>
+                </>
+
+            )
         }
     }
 
@@ -20,18 +55,34 @@ class Recep extends Component {
                             <div>
                                 <img src="https://i.ibb.co/V9rKQ22/receptionist.png" alt="receptionist" border="0" id="receplogo"/>
                             </div>
-                            <span >Name Here</span>
-                            <span>Design Here</span>
-                            <a href="#">Add New Patient</a>
-                            <a href="#">Schedule Appointment</a>
-                            <a href="#">Clients</a>
-                            <a href="#">Contact</a>
+                            {this.details()}
+                            <a href="#">About</a>
+                            <a href="#">Services</a>
 
-                    </div>                           
+                    </div>   
+                    <div className="head">
+                        <img src="https://i.ibb.co/2649Fq7/medical-symbol.png" alt="logo"  />
+                        <span className="btn btn-danger" onClick={this.handleLogout}>Log Out</span>
+                    </div>                
                 </div>
             </>
         )
 
+    }
+
+    componentDidMount() {
+        fetch(url,{
+            method: 'GET',
+            headers:{
+                'x-access-token':sessionStorage.getItem('ltk')
+            }
+        })
+        .then((res) => res.json())
+        .then((data) => {
+            this.setState({
+                userData:data
+            })
+        })
     }
 }
 export default Recep;
