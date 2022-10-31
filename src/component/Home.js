@@ -3,7 +3,7 @@ import React,{Component} from 'react';
 // import Footer from '../Footer'
 import './home.css'
 
-const url = "http://localhost:5000/api/auth/login";
+const url = "https://lens-jwt.herokuapp.com/api/auth/login";
 
 class Home extends Component{
 
@@ -48,7 +48,7 @@ class Home extends Component{
                 <div id="main">
                     <center>
                         <div>
-                            <img src="https://i.ibb.co/Kyw5xgL/logo-no-background.png" id="logo_home"></img>
+                            <img src="https://i.ibb.co/Kyw5xgL/logo-no-background.png" alt="logo" id="logo_home"></img>
                         </div>
     
                         <div id="HeadingGMH">GWALIOR MEDICAL HOSPITAL</div>
@@ -68,7 +68,7 @@ class Home extends Component{
                                 <input type="password" class="form-control" placeholder="Password" id="password" name="password" value={this.state.password} onChange={this.handleChange} required/>
                             </div>
     
-                            <button type="submit" class="btn btn-primary">Sign In</button>
+                            <button type="submit" class="btn btn-primary" onClick={this.handleSubmit}>Sign In</button>
                             </form>
                         </div>    
                     </center>                

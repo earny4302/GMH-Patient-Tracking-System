@@ -18,7 +18,6 @@ class Recep extends Component {
                 <div>             
                     <div class="sidenav">
                             <div>
-
                                 <img src="https://i.ibb.co/V9rKQ22/receptionist.png" alt="receptionist" border="0" id="receplogo"/>
                             </div>
                             <span >Name Here</span>
@@ -27,10 +26,8 @@ class Recep extends Component {
                             <a href="#">Schedule Appointment</a>
                             <a href="#">Clients</a>
                             <a href="#">Contact</a>
-                        
+
                     </div>                           
-              
-           
                 </div>
             </>
         )
