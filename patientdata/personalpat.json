@@ -1,0 +1,30 @@
+[
+    {
+        "id":"1", 
+        "name": "Priyanshu Chourasiya", 
+        "age": 20, 
+        "gender": "male", 
+        "address": "Mandi road,Stion ganj Naringhpur",
+        "phone": "7999538548",
+        "weight": "62",
+        "height": "155",
+        "addhar": "899228094520",
+        "emergency name": "Labh Khatke",
+        "emergency number":"8347364541"
+
+    },
+    {
+        "id":"2", 
+        "name": "Labh Khatke", 
+        "age": 20, 
+        "gender": "male", 
+        "address": "Near kila gate, gwalior",
+        "phone": "8347364541",
+        "weight": "52",
+        "height": "175",
+        "addhar": "890229094500",
+        "emergency name": "Priyanshu Chourasiya",
+        "emergency number":"7999538548"
+
+    }
+]
