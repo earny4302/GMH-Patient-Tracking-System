@@ -1,7 +1,6 @@
 body {
-    background-image: url("https://i.ibb.co/FJFhf3T/v870-tang-36.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    
+
     
 }
 #border{
@@ -44,4 +43,9 @@ body {
     font-size: 20px;
     background-color:#374151;
     border: none;
+}
+#main{
+    background-image: url("https://i.ibb.co/FJFhf3T/v870-tang-36.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
