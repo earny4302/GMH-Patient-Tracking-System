@@ -27,4 +27,117 @@
         "emergency number":"7999538548"
 
     }
+    ,
+    {
+        "id":"3", 
+        "name": "Sameer Sadhwani", 
+        "age": 25, 
+        "gender": "male", 
+        "address": "Indore",
+        "phone": "8347874520",
+        "weight": "58",
+        "height": "125",
+        "addhar": "89022780500",
+        "emergency name": "Priyanshu Chourasiya",
+        "emergency number":"7999538548"
+
+    },
+    {
+        "id":"4", 
+        "name": "Ayush Goswami", 
+        "age": 50, 
+        "gender": "male", 
+        "address": "Narsignhpur",
+        "phone": "9876564541",
+        "weight": "85",
+        "height": "155",
+        "addhar": "890229094500",
+        "emergency name": "Sameer Sadhwani",
+        "emergency number":"8347874520"
+
+    },
+    {
+        "id":"5", 
+        "name": "Vidhi Awadhiya", 
+        "age": 70, 
+        "gender": "female", 
+        "address": "Mysore",
+        "phone": "8347358742",
+        "weight": "52",
+        "height": "175",
+        "addhar": "890229094500",
+        "emergency name": "Ayush Goswami",
+        "emergency number":"9876564541"
+
+    },
+    {
+        "id":"6", 
+        "name": "Khushi Gupta",  
+        "age": 40, 
+        "gender": "female", 
+        "address": "gwalior",
+        "phone": "8365824541",
+        "weight": "85",
+        "height": "175",
+        "addhar": "890229094500",
+        "emergency name": "Vidhi Awadhiya",
+        "emergency number":"8347358742"
+
+    },
+    {
+        "id":"7", 
+        "name": "Priyam Indurkhya", 
+        "age": 30, 
+        "gender": "male", 
+        "address": "gwalior",
+        "phone": "8347364541",
+        "weight": "62",
+        "height": "165",
+        "addhar": "89022908950",
+        "emergency name": "Khushi Gupta",
+        "emergency number":"8365824541"
+
+    },
+    {
+        "id":"8", 
+        "name": "Ayushi Sahu", 
+        "age": 20, 
+        "gender": "female", 
+        "address": "gwalior",
+        "phone": "8895364541",
+        "weight": "55",
+        "height": "145",
+        "addhar": "890229094500",
+        "emergency name": "Priyanshu Chourasiya",
+        "emergency number":"7999538548"
+
+    },
+    {
+        "id":"9", 
+        "name": "Waqar Ahmed", 
+        "age": 59, 
+        "gender": "male", 
+        "address": "Delhi",
+        "phone": "9557364541",
+        "weight": "85",
+        "height": "175",
+        "addhar": "890229094500",
+        "emergency name": "Sameer Sadhwani",
+        "emergency number":"8347874520"
+
+    },
+    {
+        "id":"10", 
+        "name": "Aditi Pagare", 
+        "age": 20, 
+        "gender": "female", 
+        "address": "gwalior",
+        "phone": "8398564541",
+        "weight": "52",
+        "height": "175",
+        "addhar": "89078456210",
+        "emergency name": "Priyanshu Chourasiya",
+        "emergency number":"7999538548"
+
+    }
 ]
