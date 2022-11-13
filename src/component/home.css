@@ -10,8 +10,8 @@ body {
     height: 100%;
 }
 #logo_home{
-    height: 10%;
-    width: 10%;
+    height: 20%;
+    width: 20%;
     align-items: center;
     padding-top: 3%;
 }
@@ -39,15 +39,15 @@ body {
 
 #login > button{
     margin-top: 5%;
-    width: 27%;
+    width:fit-content ;
     font-size: 20px;
     background-color:#374151;
     border: none;
 }
 #main{
-    background-image: url("https://i.ibb.co/FJFhf3T/v870-tang-36.jpg");
+   
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    
     
 }
