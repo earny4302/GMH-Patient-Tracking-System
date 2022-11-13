@@ -31,7 +31,7 @@ class Recep extends Component {
             sessionStorage.setItem('loginStatus','LoggedIn')
             return(
                 <> 
-                    <span>&#128075; Hi {data.name}</span>
+                    <span font-weight="bold">{data.name}</span>
                     <span>{data.role}</span>
                 </>
             )
