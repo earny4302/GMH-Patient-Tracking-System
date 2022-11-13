@@ -1,11 +1,11 @@
 .sidenav {
   height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 15%; /* Set the width of the sidebar */
+  width: 20%; /* Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   
   top: 0; /* Stay at the top */
   left: 0;
-  background-color: #000000; /* Black */
+  background-color: #323D47; /* Black */
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 20px;
 }
@@ -14,8 +14,8 @@
 .sidenav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
-  font-size: 25px;
-  color: #818181;
+  font-size: 20px;
+  color: #DBF0EC;
   display: block;
   text-align: center;
   
@@ -24,7 +24,7 @@
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: #DBF0EC;
   display: block;
   text-align: center;
   
@@ -60,7 +60,7 @@ margin-right: auto;
 .head{
   width: 100%;
   height: 55px;
-  background-color: #000000;
+  background-color: #323D47;
   font-size:30px;
   color: rgb(124, 124, 124);
   z-index: 1;
