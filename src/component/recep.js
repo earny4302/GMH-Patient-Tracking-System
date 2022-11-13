@@ -56,16 +56,21 @@ class Recep extends Component {
                                 <img src="https://i.ibb.co/V9rKQ22/receptionist.png" style={{marginTop:"35px"}} alt="receptionist" border="0" id="receplogo"/>
                             </div>
                             {this.details()}
-                            <a href="#">About</a>
+                            <Link to="/AddPatient">
+                            <a href="#">Add Pateint</a>
+                            </Link>
                             <Link to="/servicesRecep">
-                            <a href="#">Services</a>
+                            <a href="#">Schedule Appointment</a>
+                            </Link>
+                            <Link to="/servicesRecep">
+                            <a href="#">SEARCH PATIENT HISTORY</a>
                             </Link>
 
                     </div>   
-                    <div className="head">
+                    {/* <div className="head">
                         <img src="https://i.ibb.co/2649Fq7/medical-symbol.png" alt="logo"  />
                         <span className="btn btn-danger" onClick={this.handleLogout}>Log Out</span>
-                    </div>                
+                    </div>                 */}
                 </div>
             </>
         )
