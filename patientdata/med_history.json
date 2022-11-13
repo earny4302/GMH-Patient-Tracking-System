@@ -1,0 +1,38 @@
+[
+    {
+        "id":"1",
+        "date":"01-11-2022",
+        "conditions":["cough"],
+        "surgeries":[],
+        "medications":[]
+    },
+    {
+        "id":"2",
+        "date":"02-11-2022",
+        "conditions":["typhoid"],
+        "surgeries":[],
+        "medications":[]
+    },
+    {
+        "id":"3",
+        "date":"03-11-2022",
+        "conditions":["typhoid"],
+        "surgeries":[],
+        "medications":[]
+    },
+    {
+        "id":"4",
+        "date":"01-11-2022",
+        "conditions":["dengue","fever","nausea",""],
+        "surgeries":[],
+        "medications":[]
+    },
+    {
+        "id":"5",
+        "date":"02-11-2022",
+        "conditions":[],
+        "surgeries":[],
+        "medications":[]
+    }
+    
+]
