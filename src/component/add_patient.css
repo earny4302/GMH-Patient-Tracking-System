@@ -17,6 +17,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    
    
 }
 .container{
@@ -25,15 +26,19 @@ body{
     width: 100%;
     border-radius: 6px;
     /* padding: ; */
-    margin: 0 ;
-    background-color: #fff;
+    margin: 1% ;
+    background-color: #445962;
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    padding: 10px;
+    border-radius: 25px;
+    height:auto;
 }
 .container header{
     position: relative;
     font-size: 20px;
     font-weight: 600;
-    color: #333;
+    color: #DBF0eC;
+    
 }
 .container header::before{
     content: "";
@@ -48,13 +53,14 @@ body{
 .container form{
     position: relative;
     margin-top: 16px;
-    min-height: 490px;
-    background-color: #fff;
+    min-height: 420px;
+    background-color: #445962;
     overflow: hidden;
+    
 }
 .container form .form{
     position: absolute;
-    background-color: #fff;
+    background-color: #445962;
     transition: 0.3s ease;
 }
 .container form .form.second{
@@ -75,10 +81,11 @@ form.secActive .form.first{
 .container form .title{
     display: block;
     margin-bottom: 8px;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 500;
     margin: 6px 0;
-    color: #333;
+    color: #67D3CB;
+    
 }
 .container form .fields{
     display: flex;
