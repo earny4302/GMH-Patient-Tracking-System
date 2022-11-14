@@ -13,11 +13,13 @@
 /* The navigation menu links */
 .sidenav a {
   padding: 6px 8px 6px 16px;
-  text-decoration: none;
+  text-decoration:none;
   font-size: 20px;
   color: #DBF0EC;
   display: block;
-  text-align: center;
+  text-align:left;
+  font-weight: bold;
+  
   
 }
 .sidenav span {
@@ -35,7 +37,7 @@
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: #4599A5;
 }
 
 /* Style page content */
@@ -50,11 +52,12 @@
   .sidenav a {font-size: 18px;}
 }
 #receplogo{
-  height: 65%;
-  width: 65%;
+  height: 40%;
+  width: 40%;
   display: block;
-margin-left: auto;
-margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
+  
 }
 
 .head{
