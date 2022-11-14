@@ -40,7 +40,7 @@ class Recep extends Component {
             return(
                 <>  
                     <span >Name Here</span>
-                    <span>Design Here</span>
+                    <span >Design Here</span>
                 </>
 
             )
@@ -57,10 +57,10 @@ class Recep extends Component {
                             </div>
                             {this.details()}
                             <Link to="/AddPatient">
-                            <a href="#">Add Pateint</a>
+                            <a href="#">ADD PATIENT</a>
                             </Link>
                             <Link to="/servicesRecep">
-                            <a href="#">Schedule Appointment</a>
+                            <a href="#">SCHEDULE APPOINTMENT</a>
                             </Link>
                             <Link to="/servicesRecep">
                             <a href="#">SEARCH PATIENT HISTORY</a>
