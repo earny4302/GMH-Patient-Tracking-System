@@ -32,7 +32,7 @@ class AddPatient extends Component {
             <div class="form first">
                 <div class="details personal">
                     
-
+                <span class="title">PERSONAL DETAILS</span>
                     <div class="fields">
                         <div class="input-field">
                             <label>Full Name</label>
@@ -72,7 +72,7 @@ class AddPatient extends Component {
                 </div>
 
                 <div class="details ID">
-                    <span class="title">Emergency Contact Details</span>
+                    <span class="title">EMERGENCY CONTACT DETAILS</span>
 
                     <div class="fields">
                         <div class="input-field">
