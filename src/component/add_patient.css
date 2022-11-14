@@ -2,7 +2,7 @@
 {
     width: 150%;
     margin-top: 4%;
-    margin-left: 0%;
+    margin-left: -14%;
 }
 /* ===== Google Font Import - Poppins ===== */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
@@ -102,7 +102,7 @@ form .fields .input-field{
 .input-field label{
     font-size: 12px;
     font-weight: 500;
-    color: #2e2e2e;
+    color: white;
 }
 .input-field input, select{
     outline: none;

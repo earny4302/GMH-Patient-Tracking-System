@@ -4,6 +4,7 @@ import Recep from './component/recep';
 import Home from './component/Home';
 import servicesRecep from './component/servicesRecep';
 import AddPatient from './component/add_patient';
+import Tracker from './component/tracker';
 
 const Routing = () => {
     return(
@@ -13,6 +14,7 @@ const Routing = () => {
                     <Route exact path="/recep" component={Recep}/>
                     <Route exact path="/servicesRecep" component={servicesRecep}/>
                     <Route exact path="/AddPatient" component={AddPatient}/>
+                    <Route exact path="/tracker" component={Tracker}/>
                     
             </div>
         </BrowserRouter>

@@ -31,7 +31,7 @@ class Recep extends Component {
             sessionStorage.setItem('loginStatus','LoggedIn')
             return(
                 <> 
-                    <span font-weight="bold">{data.name}</span>
+                    <span  font-weight="bold">{data.name}</span>
                     <span>{data.role}</span>
                 </>
             )
@@ -59,13 +59,10 @@ class Recep extends Component {
                             <Link to="/AddPatient">
                             <a href="#">ADD PATIENT</a>
                             </Link>
-                            <Link to="/servicesRecep">
-                            <a href="#">SCHEDULE APPOINTMENT</a>
+                            <Link to="/tracker">
+                            <a href="#">Tracker</a>
                             </Link>
-                            <Link to="/servicesRecep">
-                            <a href="#">SEARCH PATIENT HISTORY</a>
-                            </Link>
-
+                            
                     </div>   
                     {/* <div className="head">
                         <img src="https://i.ibb.co/2649Fq7/medical-symbol.png" alt="logo"  />
