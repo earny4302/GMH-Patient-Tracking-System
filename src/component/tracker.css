@@ -1,9 +1,15 @@
 #headtrack{
-    margin-top: -55%;
+    margin-top: -25%;
     margin-left: 30%;
     max-width: 900px;
     width: 100%;
-    border: 5px solid;
+   
+}
+#headtrack h1{
+    color:  #323D47;
+    font-weight: bold;
+    font-size: 50px;
+    text-decoration: underline;
 }
 
 .search-box{
@@ -11,35 +17,37 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background: #2f3640;
+    background: #4599A5;
     height: 7%;
     border-radius: 40px;
-    padding: 10px;
+    padding: 5px;
+    padding-left: 25px;
     width: 40%;
-    margin-top: -13%;
-    margin-left: 6%;
-
+    margin-top: -11%;
+    margin-left: 7%;
+    border-color: #323D47;
+        
 }
-/* .search-box:hover > .search-txt{
+.search-box:hover > .search-txt{
     width: 240px;
     padding: 0 6px;
-    top: 50px;
+    top: 10px;
 }
-.search-box:hover > .search-btn{
-   background: white;
-     } */
+/* .search-box:hover > .search-btn{
+   background: #DBF0EC;
+     }  */
 .search-btn{
-    color: #e84118;
+    color: #DBF0EC;
     float: right;
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background: #2f3640;
+    background: #323D47;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: 0.4s;
-    text-decoration: none;
+    text-decoration:solid;
 }
 .search-txt{
  border: none;
@@ -54,12 +62,12 @@
  width: 40%;
 }
 #showpat{
-    border-radius: 3%;
-    margin-top: 60%;
-    margin-left: -15%;
+    border-radius: 40px;
+    margin-top: 50%;
+    margin-left: -55%;
     height:250px;
-    width: 160%;
-    background-color: #4599A5
+    width: 260%;
+    background-color: #4599A5;
 
 }
 #showpat:hover{
@@ -76,7 +84,7 @@
     width: 50%;
     float: left;
     padding: 2%;
-    border: 3px solid;
+    
     
 }
 #patientinfobox > p {
