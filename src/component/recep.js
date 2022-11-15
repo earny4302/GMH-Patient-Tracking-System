@@ -57,10 +57,10 @@ class Recep extends Component {
                             </div>
                             {this.details()}
                             <Link to="/AddPatient">
-                            <a href="#">ADD PATIENT</a>
+                            <a href="#"><i class="fa fa-plus-circle"></i>&nbsp;ADD PATIENT</a>
                             </Link>
                             <Link to="/tracker">
-                            <a href="#">Tracker</a>
+                            <a href="#"><i class="material-icons">person_search</i>Tracker</a>
                             </Link>
                             
                     </div>   
