@@ -8,7 +8,7 @@ let mongo = require('mongodb');
 let cors = require('cors')
 let MongoClient = mongo.MongoClient;
 let bodyParsel = require('body-parser')
-const mongoUrl = 'mongodb+srv://trial321:trial321@atlascluster.kpsc2.mongodb.net/gmhData?retryWrites=true&w=majority';
+const mongoUrl = 'mongodb+srv://earny4302:earny4302@cluster0.ttnfdmp.mongodb.net/GMH?retryWrites=true&w=majority';
 let db;
 
 app.use(morgan('common'))
@@ -22,14 +22,14 @@ app.get('/',(req,res)=>{
 })
 
 app.get('/getlist',(req,res)=>{
-    db.collection('personalpat').find().toArray((err,result) => {
+    db.collection('Patient_Personal').find().toArray((err,result) => {
         if(err) throw err;
         res.send(result)
     })
 })
 
 app.post('/newEntry',(req,res) =>{
-    db.collection('personalpat').insert(req.body, (err,result) => {
+    db.collection('Patient_Personal').insert(req.body, (err,result) => {
         if(err) throw err;
         res.send('Entry Completed')
 
@@ -40,7 +40,7 @@ app.post('/newEntry',(req,res) =>{
 
 MongoClient.connect(mongoUrl,(err,client) => {
     if(err) console.log(`Error While Connecting`);
-    db = client.db('gmhData')
+    db = client.db('GMH')
     app.listen(port,() => {
         console.log(`listening on port ${port}`);
     })
