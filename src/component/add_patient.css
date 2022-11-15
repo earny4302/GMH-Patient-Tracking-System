@@ -16,7 +16,7 @@
     max-width: 750px;
     width: 100%;
     border-radius: 6px;
-    background-color: #4599A5;
+    background-color: rgb(3, 140, 135);
     box-shadow: 0 5px 10px rgba(17, 17, 17, 0.897);
     padding: 50px;
     border-radius: 25px;
@@ -43,13 +43,13 @@
     position: relative;
     margin-top: 16px;
     min-height: 420px;
-    background-color: #4599A5;
+    background-color: rgb(3, 140, 135);
     overflow: hidden;
     
 }
 .container form .form{
     position: absolute;
-    background-color: #4599A5;
+    background-color: rgb(3, 140, 135);
     transition: 0.3s ease;
 }
 .container form .form.second{
