@@ -26,6 +26,8 @@
     margin-top: -11%;
     margin-left: 7%;
     border-color: #323D47;
+    box-shadow: 0 0 10px rgba(0,0,0);
+
         
 }
 .search-box:hover > .search-txt{
