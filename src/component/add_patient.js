@@ -106,15 +106,19 @@ class AddPatient extends Component {
 
                         <div class="input-field">
                             <label>Contact Mobile No.</label>
-                            <input type="number" placeholder="Enter Contact Mobile No." name="emergency_number" value={this.state.emergency_number} onChange={this.handleChange} required/>
+                            <input type="text" placeholder="Enter Contact Mobile No." name="emergency_number" value={this.state.emergency_number} onChange={this.handleChange} required/>
                         </div>
 
                     </div>
+                    <center>
 
                     <button class="nextBtn" onClick={this.checkout}>
-                        <span class="btnText"><i class="fas fa-user-alt"></i>Next</span>
+                        
+                            <span class="btnText"><i class="fas fa-user-alt"></i>SUBMIT</span>
+                        
                         
                     </button>
+                    </center>
                 </div> 
             </div>
         </form>
