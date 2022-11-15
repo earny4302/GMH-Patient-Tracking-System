@@ -80,8 +80,8 @@ class AddPatient extends Component {
 
                         <div class="input-field">
                             <label>Gender</label>
-                            <select name="gender" value={this.state.gender} onChange={this.handleChange} required>
-                                <option disabled selected>Select gender</option>
+                            <select name="gender" value={this.state.gender}  required>
+                                <option  onChange={this.handleChange} disabled selected>Select gender</option>
                                 <option>Male</option>
                                 <option>Female</option>
                                 <option>Others</option>
