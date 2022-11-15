@@ -1,8 +1,7 @@
 #input_details
-{
-    width: 150%;
-    margin-top: 4%;
-    margin-left: -14%;
+{   
+    margin-left:17%;
+    margin-top: 3%;
 }
 /* ===== Google Font Import - Poppins ===== */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
@@ -12,26 +11,16 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-body{
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-   
-}
+
 .container{
-    position: relative;
-    max-width: 950px;
-    width: 110%;
+    max-width: 750px;
+    width: 100%;
     border-radius: 6px;
-    /* padding: ; */
-    margin: 1% ;
     background-color: #4599A5;
     box-shadow: 0 5px 10px rgba(17, 17, 17, 0.897);
     padding: 50px;
     border-radius: 25px;
-    height:auto;
+    height:550px;
 }
 .container header{
     position: relative;
@@ -130,7 +119,7 @@ form .fields .input-field{
 .input-field input[type="date"]:valid{
     color: #333;
 }
-.container form button, .backBtn{
+#but{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -141,7 +130,6 @@ form .fields .input-field{
     outline: none;
     color: #fff;
     border-radius: 6px;
-    margin: 25px 5px;
     background-color: #323D47;
     transition: all 0.3s linear;
     cursor: pointer;
@@ -151,8 +139,12 @@ form .fields .input-field{
     font-weight: 700;
     
 }
-form button:hover{
-    background-color: #445962;
+#but:hover{
+    background-color: #76d5cb;
+    border:#000000 3px solid;
+    font-size: 16px;
+    font-weight: 700;
+    color:#000000
 }
 form button i,
 form .backBtn i{

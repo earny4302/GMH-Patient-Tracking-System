@@ -1,10 +1,13 @@
 #headtrack{
-    margin-top: -25%;
+    margin-top: 3%;
     margin-left: 30%;
     max-width: 900px;
     width: 100%;
+    margin-bottom:13%;
    
 }
+
+
 #headtrack h1{
     color:  #323D47;
     font-weight: bold;
@@ -12,21 +15,19 @@
     text-decoration: underline;
 }
 
+
+
 .search-box{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    background: #4599A5;
-    height: 7%;
+    top: 25%;
+    background: #67D3C8;
+    height: 8.7%;
     border-radius: 40px;
     padding: 5px;
     padding-left: 25px;
-    width: 40%;
-    margin-top: -11%;
-    margin-left: 7%;
-    border-color: #323D47;
-    box-shadow: 0 0 10px rgba(0,0,0);
+    width: 33%;
+    margin-left: 27%;
+    box-shadow: 0 0 8px rgba(0, 0, 0,);
 
         
 }
@@ -34,10 +35,9 @@
     width: 240px;
     padding: 0 6px;
     top: 10px;
+    color: #000000;
 }
-/* .search-box:hover > .search-btn{
-   background: #DBF0EC;
-     }  */
+
 .search-btn{
     color: #DBF0EC;
     float: right;
@@ -57,29 +57,30 @@
  outline: none;
  float: left;
  padding: 0;
- color: white;
  font-size: 16px;
  transition: 0.4s;   
  line-height: 40px;
  width: 40%;
 }
 #showpat{
-    border-radius: 40px;
-    margin-top: 50%;
-    margin-left: -55%;
-    height:250px;
-    width: 260%;
-    background-color: #4599A5;
+    border-radius: 20px;
+    margin-left: 25%;
+    margin-top: 4%;
+    height:270px;
+    width: 60%;
+    background-color: rgb(3, 140, 135);
 
 }
 #showpat:hover{
-    box-shadow: 0 0 10px rgba(0,0,0);
+    box-shadow: 0 0 10px rgb(3, 140, 135);
 }
 #paticonbox{
     height: 100%;
     width: 40%;
     float: left;
-    padding: 2%;
+    padding: 4%;
+    border-radius:50px;
+    
 }
 #patientinfobox{
     height: 100%;
@@ -94,4 +95,8 @@
     color: #DBF0EC;
     font-weight: bold;
     
+}
+
+#dis{
+    width: 100%;
 }

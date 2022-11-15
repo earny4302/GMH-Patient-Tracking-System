@@ -2,20 +2,33 @@ import React,{Component} from 'react';
 import {Link} from 'react-router-dom';
 import "./tracker.css";
 import Recep from "./recep";
+import axios from 'axios';
+import TrackerDisplay from './trackerDisplay';
 
-const pUrl = "http://localhost:7800/newEntry";
+const lUrl = "http://localhost:7800/getlist";
 class Tracker extends Component {
     
     constructor(props){
         super(props)
         this.state={
-            pid:`` 
+            PatientData:'',
+            filteredData:'',
+            pid:'' 
             
         }
         
     }
     handleChange=(event) => {
-        this.setState({[event.target.name]:event.target.value})
+        this.setState({pid:event.target.value})
+        let enterid = this.state.pid
+    }
+
+    filterProduct = (enterid) => {
+        let output = this.state.PatientData.filter((data) => {
+            return (data.id.toLowerCase().indexOf(enterid.toLowerCase()) > -1)
+        })
+
+        this.setState({filteredData:output})
     }
     render(){
         return(
@@ -23,34 +36,31 @@ class Tracker extends Component {
                 <div>
                     <Recep/>
                 </div>
-                <div id="headtrack">                    
-                    <h1>TRACK PATIENT</h1>
-                    
-                </div>
-
-                <div class="search-box">
-                        <input class="search-txt" onChange={this.handleChange} type="text" name="" placeholder="Type to search"/>
-                        <a class="search-btn" href="#">
-                            <i class="fas fa-search"></i>
-                        </a>
-                </div>
-
-                <div id="showpat"> 
-                    <img id="paticonbox" src="https://i.ibb.co/JCShHKQ/patient-1.png" ></img>
-
-                    <div id="patientinfobox">
-                        <p>ID : </p>
-                        <p>NAME : </p>
-                        <p>AGE : </p>
-                        <p>GENDER : </p>
-                        <p>ADDRESS : </p>
-                        <p>PHONE : </p>                        
+                <div id="whole">
+                    <div id="headtrack">                    
+                        <h1>TRACK PATIENT</h1>
+                        
                     </div>
+
+                    <div class="search-box" >
+                            <input class="search-txt" onChange={this.handleChange} type="text" name="" placeholder="Enter the Patient ID" />
+                            <a class="search-btn" href="#">
+                                <i class="fas fa-search"></i>
+                            </a>
+                    </div>
+                    <TrackerDisplay listData={this.state.PatientData}/>
                 </div>
+                
+                
                 
             </>
         )
 
+    }
+
+    componentDidMount(){
+        axios.get(lUrl)
+        .then((res) => {this.setState({PatientData:res.data})})
     }
 
     

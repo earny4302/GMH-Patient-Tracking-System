@@ -11,7 +11,7 @@ body {
 }
 #logo_home{
     height: 25%;
-    width: 25%;
+    width: 10%;
     align-items: center;
     padding-top: 3%;
 }
@@ -24,8 +24,8 @@ body {
     padding-top: 1%;
 }
 #login{
-    width: fit-content;
     margin-top: 4%;
+    width: 30%;
 }
 
 #block{
@@ -44,6 +44,15 @@ body {
     background-color:#445962;
     
 }
+
+#login > button:hover{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    border : 2px solid rgb(88, 88, 88);
+    background-color: #76d5cb;
+    color: #445962
+}
+
 #main{
    
     background-repeat: no-repeat;

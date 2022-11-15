@@ -112,11 +112,8 @@ class AddPatient extends Component {
                     </div>
                     <center>
 
-                    <button class="nextBtn" onClick={this.checkout}>
-                        
-                            <span class="btnText"><i class="fas fa-user-alt"></i>SUBMIT</span>
-                        
-                        
+                    <button id="but" class="nextBtn" onClick={this.checkout}>
+                            <span class="btnText">SUBMIT</span>
                     </button>
                     </center>
                 </div> 

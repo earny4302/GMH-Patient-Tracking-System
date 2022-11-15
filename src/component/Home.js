@@ -48,7 +48,7 @@ class Home extends Component{
                 <div id="main">
                     <center>
                         <div>
-                            <img src="https://i.ibb.co/Kyw5xgL/logo-no-background.png" alt="logo" id="logo_home"></img>
+                            <img src="https://i.ibb.co/Kyw5xgL/logo-no-background.png" alt="logo" id="logo_home"/>
                         </div>
     
                         <div id="HeadingGMH">GWALIOR MEDICAL HOSPITAL</div>
