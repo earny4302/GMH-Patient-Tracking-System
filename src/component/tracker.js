@@ -39,12 +39,12 @@ class Tracker extends Component {
                     <img id="paticonbox" src="https://i.ibb.co/JCShHKQ/patient-1.png" ></img>
 
                     <div id="patientinfobox">
-                        <p>ID:</p>
-                        <p>NAME:</p>
-                        <p>AGE:</p>
-                        <p>GENDER:</p>
-                        <p>ADDRESS:</p>
-                        <p>PHONE:</p>                        
+                        <p>ID : </p>
+                        <p>NAME : </p>
+                        <p>AGE : </p>
+                        <p>GENDER : </p>
+                        <p>ADDRESS : </p>
+                        <p>PHONE : </p>                        
                     </div>
                 </div>
                 
