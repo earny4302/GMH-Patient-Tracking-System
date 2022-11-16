@@ -1,6 +1,6 @@
 #headtrack{
     margin-top: 3%;
-    margin-left: 30%;
+    margin-left: 19%;
     max-width: 900px;
     width: 100%;
     margin-bottom:13%;
@@ -22,7 +22,7 @@
     position: absolute;
     top: 25%;
     background: #67D3C8;
-    height: 8.7%;
+    height: 10%;
     border-radius: 40px;
     padding: 5px;
     padding-left: 25px;
@@ -53,6 +53,7 @@
     text-decoration:solid;
     padding: 3%;
     margin-right: 0.5%;
+    margin-bottom:0.5%
 }
 .search-txt{
  border: none;

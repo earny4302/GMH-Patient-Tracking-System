@@ -4,6 +4,7 @@ import "./tracker.css";
 import Recep from "./recep";
 import axios from 'axios';
 import TrackerDisplay from './trackerDisplay';
+import TrackerSearch from './trackSearch';
 
 const lUrl = "http://localhost:7800/getlist";
 class Tracker extends Component {
@@ -12,24 +13,36 @@ class Tracker extends Component {
         super(props)
         this.state={
             PatientData:'',
-            filteredData:'',
-            pid:'' 
+            filteredData:''
             
         }
         
     }
-    handleChange=(event) => {
-        this.setState({pid:event.target.value})
-        let enterid = this.state.pid
-    }
 
-    filterProduct = (enterid) => {
+    filterkey = (keyword) => {
         let output = this.state.PatientData.filter((data) => {
-            return (data.id.toLowerCase().indexOf(enterid.toLowerCase()) > -1)
+            return (data.pid.toLowerCase().indexOf(keyword.toLowerCase()) > -1)
         })
 
-        this.setState({filteredData:output})
+        this.setState({PatientData:output})
     }
+
+    // handleChange=(event) => {
+    //     this.setState({pid:event.target.value})
+    //     let output = this.state.PatientData.filter((data) => {
+    //         return (data.pid.toLowerCase().indexOf(event.target.value.toLowerCase()) > -1)
+    //     })
+
+    //     this.setState({FilteredData:output})
+    // }
+
+    // filterProduct = (enterid) => {
+    //     let output = this.state.PatientData.filter((data) => {
+    //         return (data.id.toLowerCase().indexOf(enterid.toLowerCase()) > -1)
+    //     })
+
+    //     this.setState({filteredData:output})
+    // }
     render(){
         return(
             <>
@@ -42,12 +55,7 @@ class Tracker extends Component {
                         
                     </div>
 
-                    <div class="search-box" >
-                            <input class="search-txt" onChange={this.handleChange} type="text" name="" placeholder="Enter the Patient ID" />
-                            <a class="search-btn" href="#">
-                                <i class="fas fa-search"></i>
-                            </a>
-                    </div>
+                    <TrackerSearch userInput={(data) => {this.filterkey(data)}}/>
                     <TrackerDisplay listData={this.state.PatientData}/>
                 </div>
                 
