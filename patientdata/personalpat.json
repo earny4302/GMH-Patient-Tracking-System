@@ -10,7 +10,21 @@
         "height": "155",
         "addhar": "899228094520",
         "emergency name": "Labh Khatke",
-        "emergency number":"8347364541"
+        "emergency number":"8347364541",
+        
+        "history_count":[
+            {
+                "hid":"1",
+                "date":"22-07-2022",
+                "time":"18:52",
+                "doctorName":"Labh Khatke"
+            },
+            {
+
+            }
+        ]
+        
+        
 
     },
     {
