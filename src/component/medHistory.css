@@ -1,0 +1,25 @@
+#showpatHis{
+    border-radius: 20px;
+    margin-left: 44%;
+    margin-top: -10%;
+    height:270px;
+    width: 30%;
+    background-color: rgb(3, 140, 135);
+    box-shadow: 0 0 10px rgb(3, 140, 135);
+    padding: 15px;
+
+}
+#headHis{
+    margin-top: 3%;
+    margin-left: 29%;
+    max-width: 900px;
+    width: 100%;
+    margin-bottom:13%;
+}
+#headHis h1{
+    color:  #323D47;
+    font-weight: bold;
+    font-size: 50px;
+    text-decoration: underline;
+    text-align: center;
+}
