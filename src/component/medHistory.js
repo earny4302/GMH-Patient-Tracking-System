@@ -46,7 +46,9 @@ class MedHistory extends Component {
                         </div>
                     </div>
                     <HisDisplay hisData={PatientDetail.history}/>
+                    <Link to="/newConsult">
                     <button id="but" style={{marginLeft:"55%", marginTop:"5%", width:"20%",height:"50px"}}>NEW CONSULT</button>
+                    </Link>
                     
                 
                 
