@@ -48,7 +48,7 @@ class AddPatient extends Component {
                 <div id="input_details">
                 <div class="container">
                     <center>
-                    <h1>ADD PATIENT DETAILS</h1>
+                    <h1 style={{weight: 'bold', color: '#323D47'}}><u>ADD PATIENT DETAILS</u></h1>
                     </center>
 
                     <form>
@@ -80,12 +80,7 @@ class AddPatient extends Component {
 
                         <div class="input-field">
                             <label>Gender</label>
-                            <select name="gender" value={this.state.gender}  required>
-                                <option  onChange={this.handleChange} disabled selected>Select gender</option>
-                                <option>Male</option>
-                                <option>Female</option>
-                                <option>Others</option>
-                            </select>
+                            <input type="text" placeholder="Enter Gender" name="gender" value={this.state.gender} onChange={this.handleChange} required/>
                         </div>
 
                         <div class="input-field">
