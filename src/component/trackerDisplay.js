@@ -5,7 +5,11 @@ import './tracker.css';
 const TrackerDisplay = (props) => {
     const refreshPage = ()=>{
         window.location.reload();
-     }
+    }
+
+    
+
+
     const renderData = ({listData}) => {
         if(listData){
             if(listData.length>0){

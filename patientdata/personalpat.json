@@ -1,6 +1,6 @@
 [
     {
-        "id":"1", 
+        "pid":"gmh8312", 
         "name": "Priyanshu Chourasiya", 
         "age": 20, 
         "gender": "male", 
@@ -11,16 +11,18 @@
         "addhar": "899228094520",
         "emergency name": "Labh Khatke",
         "emergency number":"8347364541",
-        
-        "history_count":[
+        "history":[
             {
                 "hid":"1",
-                "date":"22-07-2022",
-                "time":"18:52",
+                "date":"12-03-2022",
+                "time":"10:12",
                 "doctorName":"Labh Khatke"
             },
             {
-
+                "hid":"2",
+                "date":"2-01-2022",
+                "time":"8:50",
+                "doctorName":"Labh Khatke"
             }
         ]
         
@@ -28,7 +30,7 @@
 
     },
     {
-        "id":"2", 
+        "pid":"gmh7653", 
         "name": "Labh Khatke", 
         "age": 20, 
         "gender": "male", 
@@ -38,12 +40,26 @@
         "height": "175",
         "addhar": "890229094500",
         "emergency name": "Priyanshu Chourasiya",
-        "emergency number":"7999538548"
+        "emergency number":"7999538548",
+        "history":[
+            {
+                "hid":"1",
+                "date":"22-07-2022",
+                "time":"18:52",
+                "doctorName":"Labh Khatke"
+            },
+            {
+                "hid":"2",
+                "date":"30-08-2022",
+                "time":"13:00",
+                "doctorName":"Labh Khatke"
+            }
+        ]
 
     }
     ,
     {
-        "id":"3", 
+        "pid":"gmh0392", 
         "name": "Sameer Sadhwani", 
         "age": 25, 
         "gender": "male", 
@@ -53,11 +69,25 @@
         "height": "125",
         "addhar": "89022780500",
         "emergency name": "Priyanshu Chourasiya",
-        "emergency number":"7999538548"
+        "emergency number":"7999538548",
+        "history":[
+            {
+                "hid":"1",
+                "date":"14-03-2022",
+                "time":"11:03",
+                "doctorName":"Labh Khatke"
+            },
+            {
+                "hid":"2",
+                "date":"08-04-2022",
+                "time":"15:15",
+                "doctorName":"Labh Khatke"
+            }
+        ]
 
     },
     {
-        "id":"4", 
+        "pid":"gmh7764", 
         "name": "Ayush Goswami", 
         "age": 50, 
         "gender": "male", 
@@ -71,7 +101,7 @@
 
     },
     {
-        "id":"5", 
+        "pid":"5", 
         "name": "Vidhi Awadhiya", 
         "age": 70, 
         "gender": "female", 
@@ -85,7 +115,7 @@
 
     },
     {
-        "id":"6", 
+        "pid":"6", 
         "name": "Khushi Gupta",  
         "age": 40, 
         "gender": "female", 
@@ -99,7 +129,7 @@
 
     },
     {
-        "id":"7", 
+        "pid":"7", 
         "name": "Priyam Indurkhya", 
         "age": 30, 
         "gender": "male", 

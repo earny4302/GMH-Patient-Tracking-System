@@ -23,3 +23,17 @@
     text-decoration: underline;
     text-align: center;
 }
+#infobox{
+    height: 100%;
+    width: 100%;
+    float: left;
+    padding: 2%;
+    
+    
+}
+#infobox > p {
+    font: size 20px;
+    color: #DBF0EC;
+    font-weight: bold;
+    
+}
