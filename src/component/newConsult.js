@@ -38,31 +38,34 @@ class newConsult extends Component {
                     <form>
             <div class="form first">
                 <div class="details personal">
-                    
-                <span class="title">PERSONAL DETAILS</span>
+                <div class="input-field">
+                            <label>Consulting Doctor:&nbps;&nbps;&nbps;</label>
+                            <input type="text" placeholder="Enter Consulting Doctor" name="address" value={this.state.address} onChange={this.handleChange} required/>
+                        </div>
+                <span class="title">GENERAL OBSERVATIONS</span>
                     <div class="fields">
                         <input type="hidden" name="pid" value={this.state.pid}/>
                         <div class="input-field">
-                            <label>Full Name</label>
-                            <input type="text" placeholder="Enter your name" name="name" value={this.state.name} onChange={this.handleChange} required/>
+                            <label>Temperature</label>
+                            <input type="text" placeholder="Enter Temperature" name="name" value={this.state.name} onChange={this.handleChange} required/>
                         </div>
 
                         <div class="input-field">
-                            <label>Age</label>
-                            <input type="number" placeholder="Enter your age" name="age" value={this.state.age} onChange={this.handleChange} required/>
+                            <label>Pulse</label>
+                            <input type="text" placeholder="Enter Pulse" name="age" value={this.state.age} onChange={this.handleChange} required/>
                         </div>
 
                         <div class="input-field">
-                            <label>Aadhaar</label>
-                            <input type="text" placeholder="Enter your Aadhaar No." name="aadhaar" value={this.state.aadhaar} onChange={this.handleChange} required/>
+                            <label>Blood Pressure</label>
+                            <input type="text" placeholder="Enter BP" name="aadhaar" value={this.state.aadhaar} onChange={this.handleChange} required/>
                         </div>
 
                         <div class="input-field">
-                            <label>Mobile Number</label>
-                            <input type="text" placeholder="Enter mobile number" name="phone" value={this.state.phone} onChange={this.handleChange} required/>
+                            <label>SPO2</label>
+                            <input type="text" placeholder="Enter SPO2" name="phone" value={this.state.phone} onChange={this.handleChange} required/>
                         </div>
 
-                        <div class="input-field">
+                        {/* <div class="input-field">
                             <label>Gender</label>
                             <select name="gender" value={this.state.gender}  required>
                                 <option  onChange={this.handleChange} disabled selected>Select gender</option>
@@ -75,21 +78,29 @@ class newConsult extends Component {
                         <div class="input-field">
                             <label>Address</label>
                             <input type="text" placeholder="Enter your Address" name="address" value={this.state.address} onChange={this.handleChange} required/>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
 
                 <div class="details ID">
-                    <span class="title">EMERGENCY CONTACT DETAILS</span>
+                    <span class="title">CONSULTATION</span>
 
                     <div class="fields">
-                        <div class="input-field">
-                            <label>Contact Name</label>
+                        <div class="input-field2">
+                            <label>Symptoms</label>
                             <input type="text" placeholder="Enter Contact Name" name="emergency_name" value={this.state.emergency_name} onChange={this.handleChange} required/>
                         </div>
 
-                        <div class="input-field">
-                            <label>Contact Mobile No.</label>
+                        <div class="input-field2">
+                            <label>Diagnosis</label>
+                            <input type="text" placeholder="Enter Contact Mobile No." name="emergency_number" value={this.state.emergency_number} onChange={this.handleChange} required/>
+                        </div>
+                        <div class="input-field2">
+                            <label>Prescription</label>
+                            <input type="text" placeholder="Enter Contact Mobile No." name="emergency_number" value={this.state.emergency_number} onChange={this.handleChange} required/>
+                        </div>
+                        <div class="input-field2">
+                            <label>Surgeries</label>
                             <input type="text" placeholder="Enter Contact Mobile No." name="emergency_number" value={this.state.emergency_number} onChange={this.handleChange} required/>
                         </div>
 

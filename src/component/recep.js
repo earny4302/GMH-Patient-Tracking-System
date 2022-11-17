@@ -60,8 +60,9 @@ class Recep extends Component {
                             <a href="#"><i class="fa fa-plus-circle"></i>&nbsp;ADD PATIENT</a>
                             </Link>
                             <Link to="/tracker">
-                            <a href="#"><i class="material-icons">person_search</i>Tracker</a>
+                            <a href="#"><i class="material-icons">person_search</i>&nbsp;Tracker</a>
                             </Link>
+                            <button id="but" onClick={this.handleLogout} style={{marginLeft:"21%", marginTop:"65%", width:"50%",height:"60px"}}>LOG OUT</button>
                             
                     </div>   
                     {/* <div className="head">

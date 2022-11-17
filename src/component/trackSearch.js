@@ -22,9 +22,9 @@ class TrackerSearch extends Component{
             <>
                 <div class="search-box" >
                         <input class="search-txt" onChange={this.handleChange} type="text" name="" placeholder="Enter the Patient ID" />
-                        <a class="search-btn" href="#">
+                        <span class="search-btn" href="#">
                             <i class="fas fa-search"></i>
-                        </a>
+                        </span>
                 </div>
             </>
         )
