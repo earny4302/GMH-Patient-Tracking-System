@@ -29,7 +29,7 @@ class MedHistory extends Component {
                 </div>
                 <div id="whole" key={PatientDetail._id}>
                     <div id="headHis">                        
-                        <h1>Medical History</h1>                       
+                        <h1>MEDICAL HISTORY</h1>                       
                                             
                     </div>
                     <div id="showpatHis" >                         
