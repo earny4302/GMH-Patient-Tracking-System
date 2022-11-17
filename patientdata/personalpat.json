@@ -16,13 +16,15 @@
                 "hid":"1",
                 "date":"12-03-2022",
                 "time":"10:12",
-                "doctorName":"Labh Khatke"
+                "doctorName":"Harsh Goyal",
+                "details":{"symptoms":"Fever, Muscle Pain, Cold, Cough, Headache", "prescription":"","diagnosis":"viral fever", "surgeries":"","temp":"100.0F", "pulse":"88/min", "BP":"100/70 mm Hg","SPO2":"96%"}
             },
             {
                 "hid":"2",
-                "date":"2-01-2022",
+                "date":"02-01-2022",
                 "time":"8:50",
-                "doctorName":"Labh Khatke"
+                "doctorName":"Harsh Goyal",
+                "details":{"symptoms":"Fatigue, Nausea, Fever, Aches", "prescription":"","diagnosis":"dengue", "surgeries":"","temp":"103.0F", "pulse":"93/min", "BP":"120/80mm Hg","SPO2":"95"}
             }
         ]
         
@@ -46,13 +48,15 @@
                 "hid":"1",
                 "date":"22-07-2022",
                 "time":"18:52",
-                "doctorName":"Labh Khatke"
+                "doctorName":"Saral Sahu",
+                "details":{"symptoms":"", "prescription":"","diagnosis":"", "surgeries":"","temp":"", "pulse":"", "BP":"","SPO2":""}
             },
             {
                 "hid":"2",
                 "date":"30-08-2022",
                 "time":"13:00",
-                "doctorName":"Labh Khatke"
+                "doctorName":"Saral Sahu",
+                "details":{"symptoms":"", "prescription":"","diagnosis":"", "surgeries":"","temp":"", "pulse":"", "BP":"","SPO2":""}
             }
         ]
 
@@ -75,13 +79,15 @@
                 "hid":"1",
                 "date":"14-03-2022",
                 "time":"11:03",
-                "doctorName":"Labh Khatke"
+                "doctorName":"Labh Khatke",
+                "details":{"symptoms":"", "prescription":"","diagnosis":"", "surgeries":"","temp":"", "pulse":"", "BP":"","SPO2":""}
             },
             {
                 "hid":"2",
                 "date":"08-04-2022",
                 "time":"15:15",
-                "doctorName":"Labh Khatke"
+                "doctorName":"Labh Khatke",
+                "details":{"symptoms":"", "prescription":"","diagnosis":"", "surgeries":"","temp":"", "pulse":"", "BP":"","SPO2":""}
             }
         ]
 
@@ -101,7 +107,7 @@
 
     },
     {
-        "pid":"5", 
+        "pid":"gmh7855", 
         "name": "Vidhi Awadhiya", 
         "age": 70, 
         "gender": "female", 
@@ -115,7 +121,7 @@
 
     },
     {
-        "pid":"6", 
+        "pid":"gmh6246", 
         "name": "Khushi Gupta",  
         "age": 40, 
         "gender": "female", 
@@ -129,7 +135,7 @@
 
     },
     {
-        "pid":"7", 
+        "pid":"gmh3817", 
         "name": "Priyam Indurkhya", 
         "age": 30, 
         "gender": "male", 
@@ -143,7 +149,7 @@
 
     },
     {
-        "id":"8", 
+        "pid":"gmh2488", 
         "name": "Ayushi Sahu", 
         "age": 20, 
         "gender": "female", 
@@ -157,7 +163,7 @@
 
     },
     {
-        "id":"9", 
+        "pid":"gmh9859", 
         "name": "Waqar Ahmed", 
         "age": 59, 
         "gender": "male", 
@@ -171,7 +177,7 @@
 
     },
     {
-        "id":"10", 
+        "pid":"gmh2510", 
         "name": "Aditi Pagare", 
         "age": 20, 
         "gender": "female", 
@@ -185,7 +191,7 @@
 
     },
     {
-        "id":"11", 
+        "pid":"gmh9111", 
         "name": "Saurabh Gala", 
         "age": 26, 
         "gender": "male", 
@@ -199,7 +205,7 @@
 
     },
     {
-        "id":"12", 
+        "pid":"gmh2012", 
         "name": "Satish Ahuja", 
         "age": 16, 
         "gender": "male", 
@@ -214,7 +220,7 @@
     }
     ,
     {
-        "id":"13", 
+        "pid":"gmh6113", 
         "name": "Abhishek Aurora", 
         "age": 45, 
         "gender": "male", 
@@ -228,7 +234,7 @@
 
     },
     {
-        "id":"14", 
+        "pid":"gmh8914", 
         "name": "Diya Pandey", 
         "age": 31, 
         "gender": "female", 
@@ -242,7 +248,7 @@
 
     },
     {
-        "id":"15", 
+        "pid":"gmh6915", 
         "name": "Kusum Modi", 
         "age": 40, 
         "gender": "female", 
@@ -256,7 +262,7 @@
 
     },
     {
-        "id":"16", 
+        "pid":"gmh8516", 
         "name": "Hari kumar",  
         "age": 50, 
         "gender": "male", 
@@ -270,7 +276,7 @@
 
     },
     {
-        "id":"17", 
+        "pid":"gmh2317", 
         "name": "Kajal Tiwari", 
         "age": 38, 
         "gender": "female", 
@@ -284,7 +290,7 @@
 
     },
     {
-        "id":"18", 
+        "pid":"gmh2318", 
         "name": "Kirti Chand", 
         "age": 30, 
         "gender": "female", 
@@ -298,7 +304,7 @@
 
     },
     {
-        "id":"19", 
+        "pid":"gmh6519", 
         "name": "Sushant Chohan", 
         "age": 49, 
         "gender": "male", 
@@ -312,7 +318,7 @@
 
     },
     {
-        "id":"20", 
+        "pid":"gmh7420", 
         "name": "Rashid Khan", 
         "age": 28, 
         "gender": "male", 
