@@ -27,31 +27,33 @@ class viewHis extends Component {
                 </div>
                 <div id="whole">
                     <div id="headHis">                        
-                        <h1>Medical Report</h1>                       
+                        <h1>VIEW HISTORY</h1>                       
                                             
                     </div>
-                    <div id="showpatHis" >                         
+                    <div id="showpatHis" style={{height:"190px"}}>                         
                             
 
                             <div id="patientinfobox">
-                                <p>ID : </p>
-                                <p>NAME : </p>
-                                <p>AGE : </p>
-                                <p>GENDER : </p>
-                                <p>ADDRESS : </p>
-                                <p>PHONE : </p>                        
+                            <p>HID : </p>
+                                <p>DATE : </p>
+                                <p>TIME : </p>
+                                <p>CONSULTED BY : </p>                       
                             </div>
                         </div>
                     </div>
-                    <div id="showpat" >                       
+                    <div id="showpat2">                       
                             
-                        <img id="paticonbox" alt="tag" src="https://i.ibb.co/Th7ftBx/Whats-App-Image-2022-11-16-at-11-20-13-PM.jpg" style={{width:"30%"}}  ></img>
+                        <img id="paticonbox2" alt="tag" src="https://i.ibb.co/yfVckxg/insurance-1.png" style={{width:"30%"}}  ></img>
                             <div id="patientinfobox" style={{marginTop:"3%"}}>
-                                <p>HID : </p>
-                                <p>DATE : </p>
-                                <p>TIME : </p>
-                                <p>CONSULTED BY : </p>
-                                <button id="but" style={{marginLeft:"35%", marginTop:"5%"}}>VIEW DETAILS</button>                       
+                                <h2>GENERAL OBSERVATION</h2>
+                                <p>Temperature : </p>
+                                <p>Pulse Rate : </p>
+                                <p>Blood Pressure : </p>
+                                <p>SpO2 : </p>                                                     
+                                <p>Symptoms : </p>
+                                <p>Diagnosis : </p>
+                                <p>Prescription : </p>
+                                <p>Surgeries : </p>                                                     
                             </div>
                     </div>
                     
