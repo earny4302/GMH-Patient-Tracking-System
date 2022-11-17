@@ -7,6 +7,7 @@ import AddPatient from './component/add_patient';
 import Tracker from './component/tracker';
 import MedHistory from './component/medHistory';
 import viewHis from './component/viewHis'
+import newConsult from './component/newConsult'
 
 const Routing = () => {
     return(
@@ -19,6 +20,7 @@ const Routing = () => {
                     <Route exact path="/tracker" component={Tracker}/>
                     <Route exact path="/medHistory/:patientid" component={MedHistory}/>
                     <Route exact path="/viewHis" component={viewHis}/>
+                    <Route exact path="/newConsult" component={newConsult}/>
                     
             </div>
         </BrowserRouter>
