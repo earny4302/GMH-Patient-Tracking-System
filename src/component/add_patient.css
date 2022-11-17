@@ -120,7 +120,7 @@ form .fields .input-field{
     color: #333;
 }
 #but{
-    display: flex;
+    
     align-items: center;
     justify-content: center;
     height: 45px;
