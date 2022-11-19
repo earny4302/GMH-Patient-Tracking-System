@@ -36,7 +36,7 @@ class Home extends Component{
                 this.setState({message:data.token})
             }else{
                 sessionStorage.setItem('ltk',data.token)
-                this.props.history.push(`/recep`)
+                this.props.history.push(`/wel`)
             }
         })
     }
@@ -57,18 +57,18 @@ class Home extends Component{
                             
                             
                             <h4 style={{color:'#690101'}}>{this.state.message}</h4>
-                            <div class="input-group" id="block">
-                                <span class="input-group-text"><i class="fas fa-user-alt"></i></span>
-                                <input type="email" class="form-control" placeholder="Email" id="email" name="email" value={this.state.email} onChange={this.handleChange} required/>
+                            <div className="input-group" id="block">
+                                <span className="input-group-text"><i className="fas fa-user-alt"></i></span>
+                                <input type="email" className="form-control" placeholder="Email" id="email" name="email" value={this.state.email} onChange={this.handleChange} required/>
                             </div>
                             
 
-                            <div class="input-group" id="block">
-                                <span class="input-group-text"><i class="fas fa-lock"></i></span>
-                                <input type="password" class="form-control" placeholder="Password" id="password" name="password" value={this.state.password} onChange={this.handleChange} required/>
+                            <div className="input-group" id="block">
+                                <span className="input-group-text"><i className="fas fa-lock"></i></span>
+                                <input type="password" className="form-control" placeholder="Password" id="password" name="password" value={this.state.password} onChange={this.handleChange} required/>
                             </div>
     
-                            <button type="submit" class="btn btn-primary" onClick={this.handleSubmit}>Sign In</button>
+                            <button type="submit" className="btn btn-primary" onClick={this.handleSubmit}>Sign In</button>
                             
                         </div>    
                     </center>                

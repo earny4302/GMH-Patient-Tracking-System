@@ -20,7 +20,6 @@ class Recep extends Component {
         sessionStorage.removeItem('userInfo')
         sessionStorage.setItem('loginStatus','LoggedOut')
         this.setState({userData:''})
-        this.props.history.push('/')
     }
 
     details = () => {
@@ -31,8 +30,10 @@ class Recep extends Component {
             sessionStorage.setItem('loginStatus','LoggedIn')
             return(
                 <> 
-                    <span  font-weight="bold">{data.name}</span>
-                    <span>{data.role}</span>
+               
+                    <span  style={{fontSize:'28px'}}>{data.name} </span>
+                    <span style={{fontSize:'24px'}}>{data.role}</span>
+                  
                 </>
             )
 
@@ -51,24 +52,25 @@ class Recep extends Component {
         return(
             <>
                 <div>             
-                    <div class="sidenav">
+                    <div className="sidenav">
                             <div>
                                 <img src="https://i.ibb.co/V9rKQ22/receptionist.png" style={{marginTop:"35px"}} alt="receptionist" border="0" id="receplogo"/>
                             </div>
                             {this.details()}
+                            
                             <Link to="/AddPatient">
-                            <a href="#"><i class="fa fa-plus-circle"></i>&nbsp;ADD PATIENT</a>
+                            <span style={{textAlign:"left"}}><i className="fa fa-plus-circle"></i>&nbsp;ADD PATIENT</span>
                             </Link>
                             <Link to="/tracker">
-                            <a href="#"><i class="material-icons">person_search</i>&nbsp;Tracker</a>
+                            <span style={{textAlign:"left"}}><i className="material-icons">person_search</i>&nbsp;TRACKER</span>
                             </Link>
-                            <button id="but" onClick={this.handleLogout} style={{marginLeft:"21%", marginTop:"65%", width:"50%",height:"60px"}}>LOG OUT</button>
-                            
-                    </div>   
-                    {/* <div className="head">
-                        <img src="https://i.ibb.co/2649Fq7/medical-symbol.png" alt="logo"  />
-                        <span className="btn btn-danger" onClick={this.handleLogout}>Log Out</span>
-                    </div>                 */}
+                            <Link to='/'>
+                            <button id="but" onClick={this.handleLogout} style={{marginLeft:"21%",marginBottom:"0px", marginTop:"74%", width:"50%",height:"50px",fontSize:"17px"}}>
+                                <img src="https://i.ibb.co/7K79QbG/logout.png" alt="logout" style={{width:"30px",height:"30px"}} />
+                                &nbsp;LOG OUT
+                            </button>
+                            </Link>
+                    </div> 
                 </div>
             </>
         )

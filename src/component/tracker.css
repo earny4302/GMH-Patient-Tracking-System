@@ -1,6 +1,6 @@
 #headtrack{
     margin-top: 3%;
-    margin-left: 29%;
+    margin-left: 23%;
     max-width: 900px;
     width: 100%;
     margin-bottom:13%;
@@ -53,14 +53,12 @@
     text-decoration:solid;
     padding: 3%;
     margin-right: 0.5%;
-    margin-top: 0.8%;
 }
 .search-txt{
  border: none;
  background: none;
  outline: none;
  float: left;
- padding: 2%;
  font-size: 20px;
  transition: 0.4s;   
  line-height: 40px;

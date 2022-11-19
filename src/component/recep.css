@@ -25,18 +25,15 @@
 .sidenav span {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 20px;
   color: #DBF0EC;
   display: block;
   text-align: center;
-  
-}
-.sidenav span:hover {
-  color: #f1f1f1;
 }
 
+
 /* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
+.sidenav span:hover {
   color: #4599A5;
 }
 
@@ -91,4 +88,55 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   
+}
+
+#halt{
+  height: 500px;
+  width: 70%;
+  margin-top: 30px;
+  margin-left: 22%;
+}
+
+#card{
+  float: left;
+  height: 40%;
+  width: 28%;
+  margin-top: 50px;
+  margin-left:40px;
+  background-color: rgb(3, 140, 135);
+  border-radius:20px;
+  box-shadow: 4px 4px 3px 2px rgba(0, 0, 0, 0.3);
+}
+
+#card > span{
+  font-size: 36px;
+  color: #fff;
+  margin-left:25px;
+  margin-top: 10%;
+  font-family:sans-serif
+  
+}
+
+#card > img{
+  float: right;
+  width: 38%;
+  height: 39%;
+  margin-right:22px;
+  border-radius:50%;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+}
+
+#card > p{
+  color: #fff;
+  font-size: 35px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-left:25px;
+
+}
+
+.num{
+  margin-top: 25%;
+  margin-left: 5%;
+  font-size: 20px;
 }

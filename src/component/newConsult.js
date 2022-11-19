@@ -1,21 +1,49 @@
 import React,{Component} from 'react';
-import {Link} from 'react-router-dom';
-
 import Recep from "./recep";
-import axios from 'axios';
 import "./newConsult.css"
 
-const dUrl = "http://localhost:7800/getdetails";
+const Url = "http://localhost:7800/newConsult";
 
+let current = new Date();
+let newid = Number(sessionStorage.getItem('Length')) + 1
 class newConsult extends Component {
     
     constructor(props){
         super(props)
         this.state={
-            PatientDetail:''
+            hid:`${newid}`,
+            date:`${current.getDate()}-${current.getMonth()+1}-${current.getFullYear()}`,
+            time:`${current.getHours()}:${current.getMinutes()}`,
+            doctorName:'',
+            symptoms:'',
+            prescription:'',
+            diagnosis:'',
+            surgeries:'',
+            temp:'',
+            pulse:'',
+            bp:'',
+            spoo:''
             
         }
         
+    }
+
+    handleChange=(event) => {
+        this.setState({[event.target.name]:event.target.value})
+    }
+
+    checkout = () => {
+        let p = sessionStorage.getItem('Patientid')
+        let obj = this.state;
+        fetch(`${Url}/${p}`,{
+            method: 'PATCH',
+            headers: {
+                'accept':'application/json',
+                'Content-Type':'application/json'
+            },
+            body:JSON.stringify(obj)
+        })
+        .then(this.props.history.push(`/wel`))
     }
 
 
@@ -28,117 +56,85 @@ class newConsult extends Component {
                 <div id="whole">
                    
                    
-                <div class="container" style={{marginTop:"100px", marginLeft:"550px"}}>
+                <div className="container" style={{marginTop:"60px", marginLeft:"350px",height:"770px"}}>
                 <center>
-                    <h1><u>NEW CONSULT</u></h1>
+                    <h1 style={{weight: 'bold', color: '#323D47'}}><u>NEW CONSULT</u></h1>
                     </center>
 
                    
 
                     <form>
-            <div class="form first">
-                <div class="details personal">
-                <div class="input-field">
-                            <label>Consulting Doctor:&nbps;&nbps;&nbps;</label>
-                            <input type="text" placeholder="Enter Consulting Doctor" name="address" value={this.state.address} onChange={this.handleChange} required/>
+                    <div className="form first">
+                        <div className="details personal">
+                        <div className="input-group" id="block" style={{marginTop: "15px"}} >
+                            <span className="input-group-text"><i className="fas fa-user-alt"></i></span>
+                            <input type="email" className="form-control" placeholder="Enter Consulting Doctor" id="email" name="doctorName" value={this.state.doctorName} onChange={this.handleChange} required/>
                         </div>
-                <span class="title">GENERAL OBSERVATIONS</span>
-                    <div class="fields">
-                        <input type="hidden" name="pid" value={this.state.pid}/>
-                        <div class="input-field">
-                            <label>Temperature</label>
-                            <input type="text" placeholder="Enter Temperature" name="name" value={this.state.name} onChange={this.handleChange} required/>
+                        <span className="title" style={{marginTop: "30px"}} >GENERAL OBSERVATIONS</span>
+                            <div className="fields">
+                                <input type="hidden" name="hid" value={this.state.hid}/>
+                                <input type="hidden" name="date" value={this.state.date}/>
+                                <input type="hidden" name="time" value={this.state.time}/>
+                                <div className="input-field">
+                                    <label>Temperature :</label>
+                                    <input type="text" placeholder="Enter Temperature" name="temp" value={this.state.temp} onChange={this.handleChange} required/>
+                                </div>
+
+                                <div className="input-field">
+                                    <label>Pulse :</label>
+                                    <input type="text" placeholder="Enter Pulse" name="pulse" value={this.state.pulse} onChange={this.handleChange} required/>
+                                </div>
+
+                                <div className="input-field">
+                                    <label>Blood Pressure :</label>
+                                    <input type="text" placeholder="Enter BP" name="bp" value={this.state.bp} onChange={this.handleChange} required/>
+                                </div>
+
+                                <div className="input-field">
+                                    <label>SPO <sub>2</sub> :</label>
+                                    <input type="text" placeholder="Enter SPO2" name="spoo" value={this.state.spoo} onChange={this.handleChange} required/>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="input-field">
-                            <label>Pulse</label>
-                            <input type="text" placeholder="Enter Pulse" name="age" value={this.state.age} onChange={this.handleChange} required/>
-                        </div>
+                        <div className="details ID">
+                            <span className="title">CONSULTATION</span>
 
-                        <div class="input-field">
-                            <label>Blood Pressure</label>
-                            <input type="text" placeholder="Enter BP" name="aadhaar" value={this.state.aadhaar} onChange={this.handleChange} required/>
-                        </div>
+                            <div className="fields" id = "view">
+                                <div className="input-field2">
+                                    <label>Symptoms : </label>
+                                    <input type="text" id="rent" placeholder="Enter the Symptoms" name="symptoms" value={this.state.symptoms} style={{marginLeft: "18px"}} onChange={this.handleChange} required/>
+                                </div>
+                                <div className="input-field2">
+                                    <label>Prescription :</label>
+                                    <input type="text" id="rent" placeholder="Enter the Prescription" name="prescription" style={{marginLeft: "10px"}} value={this.state.prescription} onChange={this.handleChange} required/>
+                                </div>
+                                <div className="input-field2">
+                                    <label>Diagnosis :</label>
+                                    <input type="text" id="rent" placeholder="Enter the Diagnosis" name="diagnosis" value={this.state.diagnosis} style={{marginLeft: "26px"}} onChange={this.handleChange} required/>
+                                </div>
+                        
+                                <div className="input-field2">
+                                    <label>Surgeries :</label>
+                                    <input type="text" id="rent" placeholder="Enter Surgeries" name="surgeries" value={this.state.surgeries} onChange={this.handleChange} style={{marginLeft: "28px"}} required/>
+                                </div>
 
-                        <div class="input-field">
-                            <label>SPO2</label>
-                            <input type="text" placeholder="Enter SPO2" name="phone" value={this.state.phone} onChange={this.handleChange} required/>
-                        </div>
+                            </div>
+                            <center>
 
-                        {/* <div class="input-field">
-                            <label>Gender</label>
-                            <select name="gender" value={this.state.gender}  required>
-                                <option  onChange={this.handleChange} disabled selected>Select gender</option>
-                                <option>Male</option>
-                                <option>Female</option>
-                                <option>Others</option>
-                            </select>
-                        </div>
-
-                        <div class="input-field">
-                            <label>Address</label>
-                            <input type="text" placeholder="Enter your Address" name="address" value={this.state.address} onChange={this.handleChange} required/>
-                        </div> */}
+                            <button id="but" style={{marginTop: "30px"}} className="nextBtn" onClick={this.checkout}>
+                                    <span className="btnText">SUBMIT</span>
+                            </button>
+                            </center>
+                        </div> 
                     </div>
-                </div>
-
-                <div class="details ID">
-                    <span class="title">CONSULTATION</span>
-
-                    <div class="fields">
-                        <div class="input-field2">
-                            <label>Symptoms</label>
-                            <input type="text" placeholder="Enter Contact Name" name="emergency_name" value={this.state.emergency_name} onChange={this.handleChange} required/>
-                        </div>
-
-                        <div class="input-field2">
-                            <label>Diagnosis</label>
-                            <input type="text" placeholder="Enter Contact Mobile No." name="emergency_number" value={this.state.emergency_number} onChange={this.handleChange} required/>
-                        </div>
-                        <div class="input-field2">
-                            <label>Prescription</label>
-                            <input type="text" placeholder="Enter Contact Mobile No." name="emergency_number" value={this.state.emergency_number} onChange={this.handleChange} required/>
-                        </div>
-                        <div class="input-field2">
-                            <label>Surgeries</label>
-                            <input type="text" placeholder="Enter Contact Mobile No." name="emergency_number" value={this.state.emergency_number} onChange={this.handleChange} required/>
-                        </div>
-
-                    </div>
-                    <center>
-
-                    <button id="but" class="nextBtn" onClick={this.checkout}>
-                            <span class="btnText">SUBMIT</span>
-                    </button>
-                    </center>
-                </div> 
-            </div>
-        </form>
+                </form>
 
                 </div>
                 </div>
-                
-                    
-                    
-                
-                
-                
-                
+                <center><hr style={{width:"30%",color:"#d5ede9"}}/></center>
             </>
         )
-
     }
-
-    async componentDidMount() {
-
-        let patid = this.props.match.params.patientid;
-        sessionStorage.setItem('Patientid',patid)
-        axios.get(`${dUrl}/${patid}`)
-        .then((res) => {this.setState({PatientDetail:res.data})})
-
-    }
-
-
-    
 }
 export default newConsult;

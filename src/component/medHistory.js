@@ -13,7 +13,8 @@ class MedHistory extends Component {
     constructor(props){
         super(props)
         this.state={
-            PatientDetail:''
+            PatientDetail:'',
+            hist:''
             
         }
         
@@ -22,6 +23,8 @@ class MedHistory extends Component {
 
     render(){
         let {PatientDetail} = this.state
+        let len = this.state.hist.length
+        sessionStorage.setItem('Length',len)
         return(
             <>
                 <div>
@@ -47,8 +50,9 @@ class MedHistory extends Component {
                     </div>
                     <HisDisplay hisData={PatientDetail.history}/>
                     <Link to="/newConsult">
-                    <button id="but" style={{marginLeft:"55%", marginTop:"5%", width:"20%",height:"50px"}}>NEW CONSULT</button>
+                    <button id="but" style={{marginLeft:"50%", marginTop:"2%", width:"20%",height:"50px"}}><i className="fa fa-plus" ></i>&nbsp;&nbsp;NEW CONSULT</button>
                     </Link>
+                    <center><hr style={{width:"30%",color:"#d5ede9"}}/></center>
                     
                 
                 
@@ -65,6 +69,8 @@ class MedHistory extends Component {
         sessionStorage.setItem('Patientid',patid)
         axios.get(`${dUrl}/${patid}`)
         .then((res) => {this.setState({PatientDetail:res.data[0]})})
+        axios.get(`${dUrl}/${patid}`)
+        .then((res) => {this.setState({hist:res.data[0].history})})
 
 
     }

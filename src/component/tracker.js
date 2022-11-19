@@ -1,5 +1,4 @@
 import React,{Component} from 'react';
-import {Link} from 'react-router-dom';
 import "./tracker.css";
 import Recep from "./recep";
 import axios from 'axios';
@@ -27,22 +26,6 @@ class Tracker extends Component {
         this.setState({PatientData:output})
     }
 
-    // handleChange=(event) => {
-    //     this.setState({pid:event.target.value})
-    //     let output = this.state.PatientData.filter((data) => {
-    //         return (data.pid.toLowerCase().indexOf(event.target.value.toLowerCase()) > -1)
-    //     })
-
-    //     this.setState({FilteredData:output})
-    // }
-
-    // filterProduct = (enterid) => {
-    //     let output = this.state.PatientData.filter((data) => {
-    //         return (data.id.toLowerCase().indexOf(enterid.toLowerCase()) > -1)
-    //     })
-
-    //     this.setState({filteredData:output})
-    // }
     render(){
         return(
             <>

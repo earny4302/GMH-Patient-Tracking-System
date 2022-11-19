@@ -20,10 +20,10 @@ class TrackerSearch extends Component{
     render(){
         return(
             <>
-                <div class="search-box" >
-                        <input class="search-txt" onChange={this.handleChange} type="text" name="" placeholder="Enter the Patient ID" />
-                        <span class="search-btn" href="#">
-                            <i class="fas fa-search"></i>
+                <div className="search-box" >
+                        <input className="search-txt" onChange={this.handleChange} type="text" name="" placeholder="Enter the Patient ID" />
+                        <span className="search-btn" href="#">
+                            <i className="fas fa-search"></i>
                         </span>
                 </div>
             </>

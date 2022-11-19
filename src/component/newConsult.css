@@ -16,3 +16,17 @@
     font-weight: 500;
     color: white;
 }
+
+#rent{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #323D47;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+    width:75%;
+    
+}
