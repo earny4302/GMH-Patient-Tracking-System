@@ -44,8 +44,8 @@ class Wel extends Component {
                         </div>
                         <center><hr style={{width:"30%",color:"#d5ede9"}}/></center>
                         <div className="num">
-                        <p>Helpline Number : 1800-180-1104 </p>
-                        <p>Email Us : <u style={{color:"rgb(3, 140, 135)"}}>gmh9823@gmail.com</u></p>
+                        <p>Helpline Number : +91 8347364541 </p>
+                        <p>Email Us : <u style={{color:"rgb(3, 140, 135)"}}>priyanshu.4302@gmail.com</u></p>
                         </div>
                     </div>
                 </div>
