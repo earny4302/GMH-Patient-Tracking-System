@@ -4,9 +4,10 @@ import axios from 'axios';
 // import Footer from '../Footer'
 import './home.css'
 
-const url = "http://localhost:5000/api/auth/login";
-const furl = "http://localhost:5000/api/auth/users";
-
+// const url = "http://localhost:5000/api/auth/login";
+// const furl = "http://localhost:5000/api/auth/users";
+const url = "https://login-api-223x.onrender.com/api/auth/login";
+const furl = "https://login-api-223x.onrender.com/api/auth/users";
 class Home extends Component{
 
     constructor(props){

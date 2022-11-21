@@ -3,7 +3,7 @@
     border-radius: 20px;
     margin-left: 32%;
     margin-top: 4%;
-    height:430px;
+    height:470px;
     width: 55%;
     background-color: rgb(3, 140, 135);
 }
@@ -20,4 +20,10 @@
 }
 #patientinfobox2{
     width: 100%;
+}
+#subhead{
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: underline;
+    color:#323D47;
 }

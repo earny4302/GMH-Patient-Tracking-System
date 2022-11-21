@@ -2,7 +2,8 @@ import React,{Component} from 'react';
 import {Link} from 'react-router-dom';
 import "./recep.css";
 
-const url = "http://localhost:5000/api/auth/userInfo";
+// const url = "http://localhost:5000/api/auth/userInfo";
+const url = "https://login-api-223x.onrender.com/api/auth/userInfo";
 class Recep extends Component {
     
     constructor(props){

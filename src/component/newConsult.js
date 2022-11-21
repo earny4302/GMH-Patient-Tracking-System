@@ -2,7 +2,8 @@ import React,{Component} from 'react';
 import Recep from "./recep";
 import "./newConsult.css"
 
-const Url = "http://localhost:7800/newConsult";
+// const Url = "http://localhost:7800/newConsult";
+const Url = "https://patient2-api.onrender.com/newConsult";
 
 let current = new Date();
 let newid = Number(sessionStorage.getItem('Length')) + 1

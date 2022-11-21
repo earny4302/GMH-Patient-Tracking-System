@@ -6,7 +6,8 @@ import axios from 'axios';
 import "./medHistory.css"
 import HisDisplay from "./hisDisplay"
 
-const dUrl = "http://localhost:7800/getdetails";
+// const dUrl = "http://localhost:7800/getdetails";
+const dUrl = "https://patient2-api.onrender.com/getdetails";
 
 class MedHistory extends Component {
     

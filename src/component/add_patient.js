@@ -2,7 +2,8 @@ import React,{Component} from 'react';
 import "./add_patient.css";
 import Recep from "./recep";
 
-const pUrl = "http://localhost:7800/newEntry";
+// const pUrl = "http://localhost:7800/newEntry";
+const pUrl = "https://patient2-api.onrender.com/newEntry";
 class AddPatient extends Component {
     
     constructor(props){

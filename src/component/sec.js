@@ -3,7 +3,8 @@ import axios from 'axios';
 import Recep from './recep';
 import "./recep.css";
 
-const url = 'http://localhost:7800/getlist'
+// const url = 'http://localhost:7800/getlist'
+const url = 'https://patient2-api.onrender.com/getlist'
 
 class Wel extends Component {
     

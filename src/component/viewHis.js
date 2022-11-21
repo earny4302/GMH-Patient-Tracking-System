@@ -4,7 +4,8 @@ import Recep from "./recep";
 import axios from 'axios';
 import "./viewHis.css"
 
-const dUrl = "http://localhost:7800/getdetails";
+// const dUrl = "http://localhost:7800/getdetails";
+const dUrl = "https://patient2-api.onrender.com/getdetails";
 
 class viewHis extends Component {
     
@@ -51,11 +52,12 @@ class viewHis extends Component {
                             
                         <img id="paticonbox2" alt="tag" src="https://i.ibb.co/yfVckxg/insurance-1.png" style={{width:"33%"}}  ></img>
                             <div id="patientinfobox" style={{marginTop:"3%",width:"60%"}}>
-                                <h2>GENERAL OBSERVATION</h2>
+                                <h2 id="subhead">GENERAL OBSERVATION</h2>
                                 <p>Temperature : {MedReport.temp}</p>
                                 <p>Pulse Rate : {MedReport.pulse}</p>
                                 <p>Blood Pressure : {MedReport.BP}</p>
-                                <p>SpO2 : {MedReport.SPO2}</p>                                                     
+                                <p>SpO2 : {MedReport.SPO2}</p>
+                                <h2 id="subhead">CONSULTATION</h2>                                                    
                                 <p>Symptoms : {MedReport.symptoms}</p>
                                 <p>Diagnosis : {MedReport.diagnosis}</p>
                                 <p>Prescription : {MedReport.prescription}</p>

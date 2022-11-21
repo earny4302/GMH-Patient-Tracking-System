@@ -5,7 +5,8 @@ import axios from 'axios';
 import TrackerDisplay from './trackerDisplay';
 import TrackerSearch from './trackSearch';
 
-const lUrl = "http://localhost:7800/getlist";
+// const lUrl = "http://localhost:7800/getlist";
+const lUrl = "https://patient2-api.onrender.com/getlist";
 class Tracker extends Component {
     
     constructor(props){
