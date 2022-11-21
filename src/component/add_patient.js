@@ -37,6 +37,7 @@ class AddPatient extends Component {
             body:JSON.stringify(obj)
         })
         .then(this.props.history.push('/wel'))
+        alert(`Your Pid is ${this.state.pid}`)
     }
 
     render(){
