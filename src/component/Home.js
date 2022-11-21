@@ -83,7 +83,7 @@ class Home extends Component{
 
     }
 
-    componentDidMount() {
+    async componentDidMount() {
         axios.get(furl)
         .then((res) => {this.setState({users:res.data})})
     }
