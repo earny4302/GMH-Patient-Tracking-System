@@ -44,7 +44,7 @@ class MedHistory extends Component {
                                 <p>AGE : {PatientDetail.age}</p>
                                 <p>GENDER : {PatientDetail.gender}</p>
                                 <p>ADDRESS : {PatientDetail.address}</p>
-                                <p>PHONE : {PatientDetail.phone}</p>                        
+                                <p >PHONE : {PatientDetail.phone}</p>                        
                             </div>
                         </div>
                     </div>

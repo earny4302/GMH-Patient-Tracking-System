@@ -1,9 +1,11 @@
 import React,{Component} from 'react';
+import axios from 'axios';
 // import Header from '../Header';
 // import Footer from '../Footer'
 import './home.css'
 
 const url = "http://localhost:5000/api/auth/login";
+const furl = "http://localhost:5000/api/auth/users";
 
 class Home extends Component{
 
@@ -13,7 +15,8 @@ class Home extends Component{
         this.state={
             email:'',
             password:'',
-            message:''
+            message:'',
+            users:''
         }
     }
 
@@ -22,6 +25,8 @@ class Home extends Component{
     }
 
     handleSubmit = () => {
+        let count = this.state.users.length
+        sessionStorage.setItem('Staff',count);
         fetch(url,{
             method: 'POST',
             headers:{
@@ -76,6 +81,11 @@ class Home extends Component{
             </>
         )
 
+    }
+
+    componentDidMount() {
+        axios.get(furl)
+        .then((res) => {this.setState({users:res.data})})
     }
     
 }

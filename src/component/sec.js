@@ -18,6 +18,7 @@ class Wel extends Component {
     
     render(){
         let n = this.state.patientData.length
+        let s = sessionStorage.getItem('Staff')
         return(
             <>
                 <div>             
@@ -25,16 +26,16 @@ class Wel extends Component {
                     <div id="halt">
                         <div id="card">
                         <center><hr style={{width:"3%",color:"rgb(3, 140, 135)"}}/></center>
-                            <span>28</span>
+                            <span>{s}</span>
                             <img src="https://i.ibb.co/RYzCP5J/doctor.png" alt="logo" />
-                            <p>Doctors</p>
+                            <p>Hospital Staff</p>
                         </div>
-                        <div id="card">
+                        {/* <div id="card">
                         <center><hr style={{width:"3%",color:"rgb(3, 140, 135)"}}/></center>
                             <span>45</span>
                             <img src="https://i.ibb.co/Zht0Ryz/user.png" alt="logo" />
                             <p>Faculty Members</p>
-                        </div>
+                        </div> */}
                         <div id="card">
                         <center><hr style={{width:"3%",color:"rgb(3, 140, 135)"}}/></center>
                             <span>{n}</span>

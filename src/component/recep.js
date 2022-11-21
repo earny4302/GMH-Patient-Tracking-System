@@ -10,8 +10,7 @@ class Recep extends Component {
 
         this.state={
             userData:'',
-            username:'',
-            userImg:''
+            
         }
     }
 

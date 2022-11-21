@@ -99,19 +99,19 @@ body{
 
 #card{
   float: left;
-  height: 40%;
-  width: 28%;
+  height: 44%;
+  width: 38%;
   margin-top: 50px;
-  margin-left:40px;
+  margin-left:70px;
   background-color: rgb(3, 140, 135);
-  border-radius:20px;
+  border-radius:50px;
   box-shadow: 4px 4px 3px 2px rgba(0, 0, 0, 0.3);
 }
 
 #card > span{
-  font-size: 36px;
+  font-size: 56px;
   color: #fff;
-  margin-left:25px;
+  margin-left:55px;
   margin-top: 10%;
   font-family:sans-serif
   
@@ -119,24 +119,25 @@ body{
 
 #card > img{
   float: right;
-  width: 38%;
-  height: 39%;
-  margin-right:22px;
+  width: 28%;
+  height: 38%;
+  margin-right:42px;
   border-radius:50%;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 
 }
 
 #card > p{
-  color: #fff;
+  color: rgb(255, 255, 255);
   font-size: 35px;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin-left:25px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-top: 20px;
+  margin-left:55px;
 
 }
 
 .num{
-  margin-top: 25%;
+  margin-top: 23%;
   margin-left: 5%;
   font-size: 20px;
 }
