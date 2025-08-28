@@ -64,6 +64,9 @@ class Recep extends Component {
                             <Link to="/tracker">
                             <span style={{textAlign:"left"}}><i className="material-icons">person_search</i>&nbsp;TRACKER</span>
                             </Link>
+                            <Link to="/blog">
+                            <span style={{textAlign:"left"}}><i className="fa fa-newspaper-o"></i>&nbsp;MEDICAL BLOG</span>
+                            </Link>
                             <Link to='/'>
                             <button id="but" onClick={this.handleLogout} style={{marginLeft:"21%",marginBottom:"0px", marginTop:"74%", width:"50%",height:"50px",fontSize:"17px"}}>
                                 <img src="https://i.ibb.co/7K79QbG/logout.png" alt="logout" style={{width:"30px",height:"30px"}} />
